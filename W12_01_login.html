@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Prompt',Arial, sans-serif;
+            background: linear-gradient(90deg, rgba(19,173,40,1) 35%, rgba(255,252,0,1) 100%);
+            margin: 0;
+            padding: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            display: flex;
+            width: 700px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px skyblue;
+        }
+        .box-left {
+            background-image: url("images/forest.jpg");
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0.5);
+
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-transform: uppercase;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            width: 60%;
+        }
+        .box-right {
+            padding: 40px;
+            width: 40%;
+
+            form {
+                label {
+                    display: block;
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                }
+                input {
+                    width: 100%;
+                    padding: 6px;
+                    box-sizing: border-box;
+                    margin-bottom: 8px;
+                }
+                input[type="submit"] {
+                    background-color: blue;
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+                input[type="submit"]:hover {
+                    background-color: darkblue;
+                }
+            }
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box-left">
+            <h2>Information Technology</h2>
+            <p>ยินดีต้อนรับเข้าสู่เว็บไซต์การเรียนวิชาการออกแบบและพัฒนาเว็บไซต์</p>
+        </div>
+        <div class="box-right">
+            <h3>Login</h3>
+            <form action="" method="post">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Enter your username" required>
+                <label for="password">Password</label>
+                <input type="text" name="password" id="password" placeholder="Enter your password" required>
+                <input type="submit"value="Login">
+            </form>
+            <p>Forgot <a href="#">Password?</a></p>
+            <p>Don't have any account? <a href="#">Register</a></p>
+        </div>
+    </div>
+</body>
+</html>

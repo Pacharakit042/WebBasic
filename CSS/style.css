@@ -2,9 +2,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: wheat;
 }
 header {
-  background-color: rgb(255, 157, 157);
+  background-color: wheat;
+  margin-bottom: 20px;
 }
 nav {
   display: flex;
@@ -35,6 +37,9 @@ nav {
   border: none;
   text-decoration: none;
 }
+.btn-primary:hover {
+  background-color: darkblue;
+}
 .btn-secondary {
   background-color: white;
   color: blue;
@@ -43,9 +48,39 @@ nav {
   border: 1px solid blue;
   text-decoration: none;
 }
-footer {
-  background-color: rgb(156, 199, 255);
+.btn-secondary:hover {
+  background-color: whitesmoke;
 }
 .container {
-  background-color: rgb(155, 255, 155);
+  width: 70%;
+  margin: 0 auto;
+}
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+  color: blue;
+}
+a:hover {
+  color: purple;
+}
+footer {
+  background-color: rgb(202, 163, 90);
+  text-align: center;
+  color: white;
+  padding: 10px;
+  /*
+  v วิธีเข้ากลางอีกแบบ v
+  display: flex;
+  justify-content: ;content: center;
+  align-items: center;
+  */
 }
