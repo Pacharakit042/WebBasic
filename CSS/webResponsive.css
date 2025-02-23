@@ -106,6 +106,17 @@ nav ul {
   justify-content: space-between;
   align-items: center;
 }
+.customize {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.support {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
 .left-side {
   width: 50%;
   h1 {
