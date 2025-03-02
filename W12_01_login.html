@@ -81,6 +81,18 @@
         a:hover {
             color: purple;
         }
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+
+                .box-left {
+                    width: 100%;
+                }
+                .box-right {
+                    width: 85%;
+                }
+            }
+        }
     </style>
 </head>
 <body>
