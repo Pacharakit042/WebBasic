@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project Web</title>
+
+    <link rel="stylesheet" href="CSS/miniProject.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <header>
+            <div class="header-container">
+                <div class="menu">
+                    <div>
+                        <h1>Pacharakit Web Resume</h4>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">About me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#activity">Activity</a></li>
+                        <li><a href="https://github.com/Pacharakit042"><i class="fa-brands fa-square-github"></i> Github</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Hamburger -->
+                <div class="hamburger-icon" onclick="openMenu()">&#9776;</div>
+
+            </div>
+    </header>
+
+    <!-- Full-Screen Menu -->
+    <div class="full-screen-menu" id="fullScreenMenu">
+        <div class="close-btn" onclick="closeMenu()">✖</div>
+        <ul>
+            <li><a href="#">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#activity">Activity</a></li>
+            <li><a href="https://github.com/Pacharakit042"><i class="fa-brands fa-square-github"></i> Github</a></li>
+        </ul>
+    </div>
+
+    <!-- <i class="fa-solid fa-phone"></i> -->
+
+    <!-- <i class="fa-solid fa-envelope"></i> -->
+
+    <!-- <i class="fa-solid fa-location-dot"></i> -->
+
+    <!-- <i class="fa-brands fa-square-github"></i> -->
+
+    <div class="container">
+
+        <div class="profile-container">
+            <div class="top-left-side">
+                <div class="profile">
+                    <img src="images/profile.jpg" alt="">
+                </div>
+            </div>
+            <div class="top-right-side">
+                <div class="topInfo">
+                    <h1 id="about me">Pacharakit Homlumduan</h1>
+                    <h2>FULL-STACK DEVELOPER</h2>
+                    <p>I'm a full-stack developer with great experience and passion for coding and building plain interfaces.
+                    I have a manic love for great high-loaded projects. Plus, I'm an easy-going person and fit in any team.
+                    I work remotely and save your budget on my workplace. So, if you have a complicated task, you've found the right person. </p>
+                </div>
+                <div class="contact">
+                    <h2>Contact</h2>
+                    <div>
+                        <p><i class="fa-solid fa-phone"></i> 083-551-XXXX</p>
+                        <p><i class="fa-solid fa-envelope"></i> 664230042@webmail.npru.ac.th</p>
+                        <p><i class="fa-solid fa-location-dot"></i> 123/45 Khlong Maduea, Krathum  Baen, Samut Sakhon 74110</p>
+                    </div>
+                </div>
+                <div class="education">
+                    <h2>Education</h2>
+                    <p>Bachelor's degree, Faculty of Science, Information Technology
+                    Nakhon Pathom Rajabhat University | 2022 - 20XX</p>
+                </div>
+            </div>
+        </div>
+
+        <hr id="skills">    
+
+        <div class="skills">
+            <div class="skills-section">
+                <h1>Skills</h1>
+            </div>
+            <div class="skills-content">
+                <div class="item">
+                    <h3>Back-end Developer</h3>
+                    <p>Develop business logic and back-end system to support the product, create API, have vast experience with version control systems.</p>
+                    <div class="item-info">
+                        <h4>Languages:</h4>
+                        <p>PHP, Python, Java</p>
+                        <h4>My Tools:</h4>
+                        <p>MySQL</p>
+                        <p>Node JS</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>Front-end Developer</h3>
+                    <p>I code things from scratch, and gracefully bring the ideas to life and to the bowser, paying maximal attention to your vision of the product.</p>
+                    <div class="item-info">
+                        <h4>Technologies Stack:</h4>
+                        <p>HTML, JavaScript, CSS</p>
+                        <h4>My Tools:</h4>
+                        <p>Bootstrap</p>
+                        <p>AngularJS/ReactJS</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>Designer</h3>
+                    <p>I create both easy and simple, and more complex and detailed prototypes. Simplicity, convenience, usefulness and effectiveness at the same time.</p>
+                    <div class="item-info">
+                        <h4>Things I Do:</h4>
+                        <p>UX, UI, Web, Mobile, Apps</p>
+                        <h4>My Tools:</h4>
+                        <p>Figma</p>
+                        <p>Sketch</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr id="projects"> 
+
+        <div class="projects">
+            <div class="projects-section">
+                <h1>Projects</h1>
+            </div>
+            <div class="projects-content">
+                <div class="pj-left-side">
+                    <img src="images/Back-end-Develope.png" alt=" "width="400px" height="300px">
+                </div>
+                <div class="pj-right-side">
+                    <h1>BACK-END DEVELOPER</h1>
+                    <p>Description</p>
+                    <a href="MiniProject_nothingPage.html">More Info</a>
+                </div>
+            </div>
+            <div class="projects-content">
+                <div class="pj-left-side">
+                    <img src="images/Font-end-Develope.png" alt=" "width="400px" height="300px">
+                </div>
+                <div class="pj-right-side">
+                    <h1>FONT-END DEVELOPER</h1>
+                    <p>Description</p>
+                    <a href="MiniProject_nothingPage.html">More Info</a>
+                </div>
+            </div>
+            <div class="projects-content">
+                <div class="pj-left-side">
+                    <img src="images/UX-UI-Design.png" alt=" "width="400px" height="300px">
+                </div>
+                <div class="pj-right-side">
+                    <h1>UX/UI APPS DESIGNER</h1>
+                    <p>Description</p>
+                    <a href="MiniProject_nothingPage.html">More Info</a>
+                </div>
+            </div>
+        </div>
+
+        <hr id="experience">
+
+        <div class="experience">
+            <div class="experience-section">
+                <h1>Experience</h1>
+            </div>
+            <div class="experience-content">
+                <div class="item">
+                    <p>Freelance Web Developer <br> 
+                    20XX - Present</p>
+                    <ul>
+                        <li>Designed and developed websites for small businesses, including coffee shops and online stores.</li>
+                        <li>Implemented Firebase Authentication and Firestore for user data management.</li>
+                        <li>Provided consultation on SEO optimization and website performance improvements.</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <p>Teaching Assistant <br>
+                    20XX - 20XX</p>
+                    <ul>
+                        <li>Assisted the professor in guiding students through Web Development coursework.</li>
+                        <li>Reviewed and provided feedback on students projects.</li>
+                        <li>Conducted workshops on web application development using Flask and JavaScript.</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <p>Intern Full-Stack Developer <br> 
+                    20XX - 20XX</p>
+                    <ul>
+                        <li>Developed and enhanced features for the company's internal web application.</li>
+                        <li>Integrated APIs with the backend system using Node.js and Express.</li>
+                        <li>Improved UI/UX design to ensure responsiveness across devices.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr id="activity">
+
+        <div class="activity">
+            <div class="activity-section">
+                <h1>Activity</h1>
+            </div>
+            <div class="activity-content">
+                <div class="activity-1">
+                    <div class="item">
+                        <div class="left-side">
+                            <h2>Back-End Developer Bootcamp</h2>
+                            <p>Organizer: XYZ Tech Academy | Duration: September 20XX</p>
+                            <p>Key Learnings:</p>
+                            <ul>
+                                <li>Gained hands-on experience in Node.js, Express.js, and RESTful APIs.</li>
+                                <li>Worked with databases including MongoDB and PostgreSQL.</li>
+                                <li>Implemented authentication and authorization using JWT and OAuth.</li>
+                                <li>Developed a full-stack project integrating both front-end and back-end.</li>
+                            </ul>
+                        </div>
+                        <div class="right-side">
+                            <img src="images/back-end-activity.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="activity-2">
+                    <div class="item">
+                        <div class="left-side">
+                            <h2>Front-End Developer Workshop</h2>
+                            <p>Organizer: ABC Software Institute | Duration: June 20XX</p>
+                            <p>Key Learnings:</p>
+                            <ul>
+                                <li>Mastered React.js, Vue.js, and modern front-end frameworks.</li>
+                                <li>Built responsive web interfaces using TailwindCSS and CSS Grid/Flexbox.</li>
+                                <li>Improved website performance and SEO best practices.</li>
+                                <li>Developed a portfolio project using React and deployed it on Vercel.</li>
+                            </ul>
+                        </div>
+                        <div class="right-side">
+                            <img src="images/font-end-activity.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="activity-3">
+                    <div class="item">
+                        <div class="left-side">
+                            <h2>UI/UX Design Fundamentals Training</h2>
+                            <p>Organizer: Creative Design Hub | Duration: March 20XX</p>
+                            <p>Key Learnings:</p>
+                            <ul>
+                                <li>Learned UI/UX design principles and Figma prototyping.</li>
+                                <li>Conducted user research and created wireframes for web applications.</li>
+                                <li>Improved accessibility and usability in web design.</li>
+                                <li>Designed a mock web application interface as part of a final project.</li>
+                            </ul>
+                        </div>
+                        <div class="right-side">
+                            <img src="images/designer-activity.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Most of the content here is fictional and created for the purpose of developing a mini project web resume to submit to the instructor. <br>
+        It may be modified with real information for actual use in the future.</p>
+        <p>@copyright by Pacharakit Homlumduan</p>
+        <p>Information Technology</p>
+        <p>Nakhon Pathom Rajabhat University</p>
+    </footer>
+
+    <script>
+        function openMenu() {
+            document.getElementById("fullScreenMenu").style.display = "block";
+        }
+
+        function closeMenu() {
+            document.getElementById("fullScreenMenu").style.display = "none";
+        }
+
+    </script>
+
+</body>
+</html>
