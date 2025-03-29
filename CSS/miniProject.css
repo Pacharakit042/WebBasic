@@ -15,6 +15,8 @@
 
 body {
     font-family: 'Prompt', sans-serif;
+    background-color: rgb(230, 240, 255);;
+
     hr {
         margin: 100px 0;
     }
@@ -72,7 +74,8 @@ nav ul {
 .container {
     max-width: 1200px;
     margin: 50px auto;
-    padding: 0 20px;
+    border-radius: 30px;
+    padding: 30px;
     background-color: var(--base-color-white);
 }
 
@@ -92,30 +95,27 @@ nav ul {
     }
 
     .top-right-side {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .about-me-section {
+            text-align: center;
+        }
 
         .topInfo {
-            text-align: center;
-            margin-bottom: 40px;
             padding: 15px;
             border-radius: 10px;
             box-shadow: var(--box-shadow);
-        
-            h1 {
-                padding-bottom: 30px;
-            }
-        
+
             h2 {
-                padding-bottom: 30px;
-                color: var(--primary-color);
-            }
-        
-            p {
-                font-style: italic;
+                text-align: center;
+                font-weight: bold;
+                padding-bottom: 10px;
             }
         }
 
         .contact {
-            margin-bottom: 40px;
             padding: 15px;
             border-radius: 10px;
             box-shadow: var(--box-shadow);
@@ -123,7 +123,7 @@ nav ul {
             h2 {
                 text-align: center;
                 font-weight: bold;
-                padding-bottom: 30px;
+                padding-bottom: 10px;
             }
 
             p {
@@ -139,12 +139,11 @@ nav ul {
             h2 {
                 text-align: center;
                 font-weight: bold;
-                padding-bottom: 30px;
+                padding-bottom: 10px;
             }
 
             p {
-                font-style: italic;
-                padding-bottom: 10px;
+                padding-bottom: 20px;
             }
         }
     }
@@ -168,7 +167,6 @@ nav ul {
             box-shadow: var(--box-shadow);
             border-radius: 10px;
             padding: 20px;
-            font-style: italic;
 
             h4 {
                 color: var(--primary-color);
@@ -213,7 +211,7 @@ nav ul {
             text-align: center;
             padding: 30px;
 
-            h1, p {
+            h2, p {
                 margin-bottom: 20px;
             }
 
@@ -240,16 +238,15 @@ nav ul {
     .experience-content {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         gap: 20px;
     
         .item {
             box-shadow: var(--box-shadow);
             border-radius: 10px;
             padding: 50px;
-            font-style: italic;
-            p {
+            h3 {
                 text-align: center;
-                font-weight: bold;
                 margin-bottom: 30px;
             }
         }
@@ -258,7 +255,6 @@ nav ul {
 
 .activity {
     margin-bottom: 80px;
-    font-style: italic;
 
     .activity-section {
         text-align: center;
@@ -275,67 +271,20 @@ nav ul {
                 justify-content: space-between;
                 align-items: center;
                 margin-bottom: 20px;
+                padding: 0 30px;
+                gap: 100px;
     
                 .left-side {
-                    h2, p, ul {
-                        margin-bottom: 10px;
-                    }
-                }
-    
-                .right-side {
                     img {
                         border-radius: 20px;
                         width: 400px;
                         height: 300px;
                     }
                 }
-            }
-        }
-        .activity-2 {
-            margin-bottom: 80px;
-
-            .item {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-bottom: 20px;
-    
-                .left-side {
-                    h2, p, ul {
-                        margin-bottom: 10px;
-                    }
-                }
     
                 .right-side {
-                    img {
-                        border-radius: 20px;
-                        width: 400px;
-                        height: 300px;
-                    }
-                }
-            }
-        }
-
-        .activity-3 {
-            margin-bottom: 80px;
-
-            .item {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-bottom: 20px;
-    
-                .left-side {
                     h2, p, ul {
                         margin-bottom: 10px;
-                    }
-                }
-    
-                .right-side {
-                    img {
-                        border-radius: 20px;
-                        width: 400px;
-                        height: 300px;
                     }
                 }
             }
@@ -368,11 +317,15 @@ footer {
 
 /* Responsive for Mobile */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .hamburger-icon {
       display: block;
       font-size: 2rem;
       cursor: pointer;
+    }
+
+    body {
+        background-color: white;
     }
 
     nav {
@@ -384,6 +337,12 @@ footer {
             width: 100%;
         }
         flex-direction: column;
+
+        .top-right-side {
+            .about-me-section, .topInfo, .contact, .education {
+                margin-bottom: 20px;
+            }
+        }
     }
 
     .skills-content {
@@ -459,4 +418,4 @@ footer {
         right: 30px;
         cursor: pointer;
     }
-}
+}   
